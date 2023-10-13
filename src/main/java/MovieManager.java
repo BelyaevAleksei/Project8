@@ -8,6 +8,7 @@ public class MovieManager {
 
     public MovieManager(int limit) {
         this.limit = limit;
+
     }
 
     public void addMovie(String movie) {
@@ -16,7 +17,7 @@ public class MovieManager {
             tmp[i] = movies[i];
         }
         tmp[tmp.length - 1] = movie;
-        this.movies = tmp;
+        movies = tmp;
     }
 
     public String[] findAll() {
